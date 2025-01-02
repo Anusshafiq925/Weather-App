@@ -77,13 +77,17 @@ function showValue(getValue) {
   temperature.innerText = `${Math.round(getValue.main.temp - 273.15)}\u00B0C`;
   weather.innerText = getValue.weather[0].main;
   if (getValue.weather[0].main === "Haze") {
-    image.src = "./assets/haze.png";
+    image.src = "./assets/windSunny.png";
   } else if (getValue.weather[0].main === "Clouds") {
     image.src = "./assets/cloud.png";
   } else if (getValue.weather[0].main === "Clear") {
     image.src = "./assets/cloudySunny.png";
   } else if (getValue.weather[0].main === "Rain") {
     image.src = "./assets/cloudyRain.png";
+  } else if (getValue.weather[0].main === "Fog") {
+    image.src = "./assets/haze.png";
+  } else if (getValue.weather[0].main === "Mist") {
+    image.src = "./assets/haze.png";
   } else {
     image.src = "./assets/sunny.png";
   }
