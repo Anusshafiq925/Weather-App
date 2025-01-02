@@ -38,3 +38,9 @@ input:focus {
 .tempSize {
   font-size: 5rem;
 }
+
+@media (max-width: 600px) {
+  .tempSize {
+    font-size: 4rem;
+  }
+}
